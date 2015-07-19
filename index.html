@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<a href="#" onclick="alert('Hi')">Click Me1</a>
-
-
-<a href="#" id="click_me">Click Me2</a>
-<script type="text/javascript">
-document.getElementById('click_me').addEventListener("click", function(event) {
-    (function(event) {
-        alert(this);
-    }).call(document.getElementById('click_me'), event);
-});
-</script>
-
-</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Open Data Mining|Home</title>
+        <link rel="stylesheet" type="text/css" href="Styles/Stylesheet.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--<?php include_once("analyticstracking.php") ?> -->
+        <div id="wrapper">
+            <div id="banner">             
+            </div>
+            
+            <nav id="navigation">
+                <ul id="nav">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">about</a></li>
+					<li><a target="_blank" href="http://sigkddseattle.acm.org/">SIGKDD Seattle</a></li>
+                </ul>
+            </nav>
+            
+            <div id="content_area">
+                Need some content
+            </div>
+            
+            <div id="sidebar">
+                <img src="../Images/data-mining.png"  style="width:100%; height:100%;"/>
+            </div>
+            
+            <footer>
+                <p>All rights reserved</p>
+            </footer>
+        </div>
+    </body>
 </html>
+
+
+<?php include("analyticstracking.php") ?>
